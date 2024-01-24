@@ -1,0 +1,105 @@
+div div {
+    width: 150px; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "Rubik Bubbles";
+}
+div {
+    font-family: "Caveat";
+}
+.g {
+    font-family: 'Oswald', sans-serif;}
+.q, .w, .e, .r {
+    height: 180px;
+    position: relative;
+}
+div div h4 {
+    font-size: 120%;
+}
+
+td, th {
+    border: 1px solid black; 
+}
+.q {
+    color: rgb(235, 235, 13);
+    background-color: rgb(22, 22, 202);
+}
+.w {
+    color: rgb(10, 53, 90);
+    background-color: rgb(33, 177, 88);
+}
+.e {
+    color: rgb(127, 165, 201);
+    background-color: rgb(170, 54, 98);
+}
+.r {
+    color: blue;
+    background-color: rgb(179, 255, 0);
+}
+
+.a {
+    color:rgb(41, 12, 18);
+    background-color: rgb(255, 153, 0);
+}
+.s {
+    color:rgb(159, 216, 194);
+    background-color: rgb(123, 31, 177);
+}
+.d {
+    color:rgb(66, 3, 17);
+    background-color: rgb(43, 226, 186);
+}
+.f {
+    color: rgb(213, 200, 230);
+    background-color: rgb(51, 40, 197);
+}
+.r img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+@media (max-width: 768px){
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .q, .w, .e, .r {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .q, .w, .e, .r {
+        width:50%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .q, .w, .e {
+        width:33%;
+    }
+    .r {
+        width:100%;
+    }
+}
+@media (min-width: 1200px){
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .q, .w, .e, .r {
+        width:25%;
+    }
+}
